@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>سامانه‌ی جمع‌سپاری</title>
+    <link href={% static "css/bootstrap.min.css" %} rel="stylesheet">
+    <link href={% static "css/animate.min.css" %} rel="stylesheet">
+    <link href={% static "css/font-awesome.min.css" %} rel="stylesheet">
+    <link href={% static "css/lightbox.css" %} rel="stylesheet">
+    <link href={% static "css/main.css" %} rel="stylesheet">
+    <link href={% static "css/base.css" %} rel="stylesheet">
+    <link id="css-preset" href={% static "css/presets/preset1.css" %} rel="stylesheet">
+    <link href={% static "css/responsive.css" %} rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src={% static "js/html5shiv.js" %} ></script>
+    <script src={% static "js/respond.min.js" %} ></script>
+    <![endif]-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href={% static "images/favicon.ico" %}>
+</head>
+<!--/head-->
+
+<body dir="rtl">
+
+<!--.preloader-->
+<div class="preloader"><i class="fa fa-circle-o-notch fa-spin"></i></div>
+<!--/.preloader-->
+
+<header id="home">
+    <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="item active" style="background-image: url({% static 'images/slider/1.jpg' %})">
+                <div class="caption">
+                    <h1 class="animated fadeInLeftBig">به <span>سامانه‌ی جمع‌سپاری</span> خوش آمدید</h1>
+
+                    <p class="animated fadeInRightBig">توضیح کوتاه در مورد سایت (یک خط)</p>
+                    <a data-scroll class="btn btn-start animated fadeInUpBig" href="login">ورود</a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url({% static 'images/slider/2.jpg' %})">
+                <div class="caption">
+                    <h1 class="animated fadeInLeftBig">انجام کارهای خود را به <span>سامانه‌ی جمع‌سپاری</span> بسپارید
+                    </h1>
+
+                    <p class="animated fadeInRightBig">توضیحات مربوط به حساب کارفرما (یک خط)</p>
+                    <a data-scroll class="btn btn-start animated fadeInUpBig" href="login">ورود</a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url({% static 'images/slider/3.jpg' %})">
+                <div class="caption">
+                    <h1 class="animated fadeInLeftBig">از طریق <span>سامانه‌ی جمع‌سپاری</span> کسب درآمد کنید</h1>
+
+                    <p class="animated fadeInRightBig">توضیحات مربوط به حساب کارمند (یک خط)</p>
+                    <a data-scroll class="btn btn-start animated fadeInUpBig" href="login">ورود</a>
+                </div>
+            </div>
+        </div>
+        <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+        <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+
+        <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
+
+    </div>
+    <!--/#home-slider-->
+    <div class="main-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <h1><span>سامانه‌ی جمع‌سپاری</span><img class="img-responsive" src={% static "images/logo.png" %}
+                            style="display:inline-block" alt="logo"></h1>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="scroll active"><a href="#home">خانه</a></li>
+                    <li class="scroll"><a href="#services">خدمات</a></li>
+                    <li class="scroll"><a href="#about-us">درباره‌ی ما</a></li>
+                    <li class="scroll"><a href="#portfolio">کارها</a></li>
+                    <li class="scroll"><a href="#twitter">نظر کاربران</a></li>
+                    <li class="scroll"><a href="#contact">ارتباط با ما</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--/#main-nav-->
+</header>
+<!--/#home-->
+<section id="services">
+    <div class="container">
+        <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="row">
+                <div class="text-center col-sm-8 col-sm-offset-2">
+                    <h2>خدمات ما</h2>
+                </div>
+            </div>
+        </div>
+        <div class="text-center our-services">
+            <div class="row">
+                <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="service-icon">
+                        <i class="fa fa-user-secret"></i>
+                    </div>
+                    <div class="service-info">
+                        <h3>حریم خصوصی</h3>
+
+                        <p>اطلاعات شما حساس شما برای کاربران دیگر سایت فاش نمی‌شود</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
+                    <div class="service-icon">
+                        <i class="fa fa-umbrella"></i>
+                    </div>
+                    <div class="service-info">
+                        <h3>ضمانت</h3>
+
+                        <p>توضیحاتی در مورد ضمانت انجام درست کار و ضمانت تحویل پول</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms">
+                    <div class="service-icon">
+                        <i class="fa fa-support"></i>
+                    </div>
+                    <div class="service-info">
+                        <h3>پشتیبانی ۲۴ ساعته</h3>
+
+                        <p>بطور ۲۴ ساعته پاسخگوی سوالات شما هستیم</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--/#services-->
+<section id="about-us" class="parallax">
+    <div class="container">
+        <div class="row">
+            <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <h2>درباره‌ی ما</h2>
+
+                <p>توضیحات تکمیلی در مورد شرکت و سایت</p>
+            </div>
+        </div>
+        <div class="row count">
+            <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <i class="fa fa-users"></i>
+
+                <h3 class="timer">4000</h3>
+
+                <p>کارمندان</p>
+            </div>
+            <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+                <i class="fa fa-users"></i>
+
+                <h3 class="timer">200</h3>
+
+                <p>کارفرمایان</p>
+            </div>
+            <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+                <i class="fa fa-check"></i>
+
+                <h3 class="timer">200</h3>
+
+                <p>کارهای انجام شده</p>
+            </div>
+            <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="1ms">
+                <i class="fa fa-dollar"></i>
+
+                <h3><span class="timer">2000000000000</span> ریال</h3>
+
+                <p>مبلغ رد و بدل شده</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/#about-us-->
+
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms"
+                 data-wow-delay="300ms">
+                <h2>جدیدترین کارهای ثبت شده</h2>
+
+                <div class="caption">
+                    <a data-scroll="" class="btn btn-start btn-white-bg animated fadeInUpBig" href="">مشاهده‌ی تمام
+                        کارها</a>
+                </div>
+            </div>
+        </div>
+        <div id="tiles">
+            <div class="row tiles">
+                <div class="col-md-3">
+                    <div class="tile">
+                        <!-- These are our grid blocks -->
+                        <img src={% static "images/preview.jpg" %}>
+
+                        <div class="post-info">
+                            <div class="post-basic-info">
+                                <h3><a href="#">سایت mturk</a></h3>
+                                <span>توسط <a href="#">دکتر حیدرنوری</a></span>
+
+                                <p>یک سایت برای ارائه‌ی راهکار یک‌پارچه برای جمع‌سپاری</p>
+                            </div>
+                            <div class="reward">
+                                دستمزد: ۱۰۰۰ ریال
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tile">
+                        <img src={% static "images/rohani.jpg" %}>
+
+                        <div class="post-info">
+                            <div class="post-basic-info">
+                                <h3><a href="#">کلیپ تبلیغاتی</a></h3>
+                                <span>توسط <a href="#">دکتر حسن روحانی</a></span>
+
+                                <p>یک کلیپ تبلیغاتی برای انتخابات سال ۹۶ ریاست جمهوری.</p>
+                            </div>
+
+                            <div class="reward">
+                                دستمزد: ۱۰۰۰ ریال
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tile">
+                        <img src={% static "images/preview.jpg" %}>
+
+                        <div class="post-info">
+                            <div class="post-basic-info">
+                                <h3><a href="#">سایت mturk</a></h3>
+                                <span>توسط <a href="#">سعید فروغی</a></span>
+
+                                <p>یک سایت برای ارائه‌ی راهکار یک‌پارچه برای جمع‌سپاری. این پروژه به عنوان پروژه‌ی
+                                    دانشگاهی توسط کافرما باید ارائه شود :)</p>
+                            </div>
+
+                            <div class="reward">
+                                دستمزد: ۱۰۰۰ ریال
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tile">
+                        <img src={% static "images/servey.jpg" %}>
+
+                        <div class="post-info">
+                            <div class="post-basic-info">
+                                <h3><a href="#">نظرسنجی انتخاباتی</a></h3>
+                                <span>توسط <a href="#">دکتر حسن روحانی</a></span>
+
+                                <p>نظرسنجی در مورد انتخاب شما در انتخابات ریاست جمهوری</p>
+                            </div>
+
+                            <div class="reward">
+                                دستمزد: ۱۰۰۰ ریال
+                            </div>
+                        </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#portfolio-single-wrap -->
+</section>
+<!--/#portfolio-->
+
+
+<section id="twitter" class="parallax">
+    <div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="twitter-icon text-center">
+                        <img src={% static "images/1man.png" %}>
+                        <h4>حسن حسینی</h4>
+                    </div>
+                    <div class="row">
+                        <p>سایت عالی هست... من با کمک این سایت ملیونر شدم :)</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/#twitter-->
+
+<section id="contact">
+    <div id="google-map" class="wow fadeIn" data-latitude="35.704090" data-longitude="51.351668"
+         data-wow-duration="1000ms" data-wow-delay="400ms"></div>
+    <div id="contact-us" class="parallax">
+        <div class="container">
+            <div class="row">
+                <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms"
+                     data-wow-delay="300ms">
+                    <h2>ارتباط با ما</h2>
+
+                    <p>خوشحال می‌شویم نظرات و پیشنهادات شما را بشنویم.</p>
+                </div>
+            </div>
+            <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <form id="main-contact-form" name="contact-form" method="post" action="#">
+                            <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" placeholder="نام"
+                                               required="required">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control"
+                                               placeholder="آدرس پست الکترونیکی" required="required">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" class="form-control" placeholder="موضوع"
+                                       required="required">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" class="form-control" rows="4"
+                                          placeholder="لطفا پیام خود را وارد کنید..." required="required"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn-submit">بفرست</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <p>راه‌های دیگر ارتباطی با ما اینهاست:</p>
+                            <ul class="address">
+                                <li><i class="fa fa-map-marker"></i> <span> آدرس:</span> خیابان آزادی - دانشگاه شریف
+                                </li>
+                                <li><i class="fa fa-phone"></i> <span> تلفن:</span> ۰۲۱-۱۲۳۴۵۶۷۸</li>
+                                <li><i class="fa fa-envelope"></i> <span> آدرس پست الکترونیکی:</span><a
+                                        href="mailto:someone@yoursite.com"> support@crowdsource.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/#contact-->
+<footer id="footer">
+    <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="container text-center">
+            <div class="footer-logo">
+                <a href="index.html"><img class="img-responsive" src={% static "images/logo.png" %} alt=""></a>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <p>&copy; ۱۳۹۵ شرکت فلان.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src={% static "js/jquery.js" %}></script>
+<script type="text/javascript" src={% static "js/bootstrap.min.js" %}></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src={% static "js/jquery.inview.min.js" %}></script>
+<script type="text/javascript" src={% static "js/wow.min.js" %}></script>
+<script type="text/javascript" src={% static "js/mousescroll.js" %}></script>
+<script type="text/javascript" src={% static "js/smoothscroll.js" %}></script>
+<script type="text/javascript" src={% static "js/jquery.countTo.js" %}></script>
+<script type="text/javascript" src={% static "js/lightbox.min.js" %}></script>
+<script type="text/javascript" src={% static "js/main.js" %}></script>
+
+</body>
+</html>
